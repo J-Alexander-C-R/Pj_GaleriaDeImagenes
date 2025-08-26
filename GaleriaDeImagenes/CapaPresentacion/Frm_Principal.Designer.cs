@@ -21,43 +21,22 @@
             panelSideMenu = new Panel();
             panel1 = new Panel();
             btnExit = new Button();
-            btnInfo = new Button();
             panelMenu = new Panel();
             btnGaleriaImagenes = new Button();
             btnGaleria = new Button();
             btnInicio = new Button();
             panelLogo = new Panel();
+            pictureBox8 = new PictureBox();
             panelChildForm = new Panel();
             panelFooter = new Panel();
-            pictureBox7 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            label3 = new Label();
-            label2 = new Label();
-            panel3 = new Panel();
-            label1 = new Label();
-            panel2 = new Panel();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
             picLogo = new PictureBox();
-            pictureBox8 = new PictureBox();
             panelSideMenu.SuspendLayout();
             panel1.SuspendLayout();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
-            panelChildForm.SuspendLayout();
-            panelFooter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panelChildForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picLogo).BeginInit();
             SuspendLayout();
             // 
             // panelSideMenu
@@ -65,7 +44,6 @@
             panelSideMenu.AutoScroll = true;
             panelSideMenu.BackColor = Color.FromArgb(11, 7, 17);
             panelSideMenu.Controls.Add(panel1);
-            panelSideMenu.Controls.Add(btnInfo);
             panelSideMenu.Controls.Add(panelMenu);
             panelSideMenu.Controls.Add(btnGaleria);
             panelSideMenu.Controls.Add(btnInicio);
@@ -104,26 +82,6 @@
             btnExit.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
-            // 
-            // btnInfo
-            // 
-            btnInfo.Dock = DockStyle.Top;
-            btnInfo.FlatAppearance.BorderSize = 0;
-            btnInfo.FlatStyle = FlatStyle.Flat;
-            btnInfo.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnInfo.ForeColor = Color.Gainsboro;
-            btnInfo.Image = (Image)resources.GetObject("btnInfo.Image");
-            btnInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            btnInfo.Location = new Point(0, 251);
-            btnInfo.Name = "btnInfo";
-            btnInfo.Padding = new Padding(5, 0, 0, 0);
-            btnInfo.Size = new Size(250, 40);
-            btnInfo.TabIndex = 5;
-            btnInfo.Text = "Mas";
-            btnInfo.TextAlign = ContentAlignment.MiddleLeft;
-            btnInfo.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnInfo.UseVisualStyleBackColor = true;
-            btnInfo.Click += btnInfo_Click;
             // 
             // panelMenu
             // 
@@ -201,6 +159,17 @@
             panelLogo.Size = new Size(250, 129);
             panelLogo.TabIndex = 0;
             // 
+            // pictureBox8
+            // 
+            pictureBox8.Dock = DockStyle.Top;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(0, 0);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(250, 129);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 0;
+            pictureBox8.TabStop = false;
+            // 
             // panelChildForm
             // 
             panelChildForm.BackColor = Color.FromArgb(32, 30, 45);
@@ -216,144 +185,13 @@
             // panelFooter
             // 
             panelFooter.BackColor = Color.FromArgb(23, 21, 32);
-            panelFooter.Controls.Add(pictureBox7);
-            panelFooter.Controls.Add(pictureBox6);
-            panelFooter.Controls.Add(pictureBox5);
-            panelFooter.Controls.Add(pictureBox4);
-            panelFooter.Controls.Add(label3);
-            panelFooter.Controls.Add(label2);
-            panelFooter.Controls.Add(panel3);
-            panelFooter.Controls.Add(label1);
-            panelFooter.Controls.Add(panel2);
-            panelFooter.Controls.Add(pictureBox3);
-            panelFooter.Controls.Add(pictureBox2);
-            panelFooter.Controls.Add(pictureBox1);
             panelFooter.Dock = DockStyle.Bottom;
             panelFooter.ForeColor = SystemColors.ControlText;
             panelFooter.Location = new Point(0, 708);
             panelFooter.Name = "panelFooter";
             panelFooter.Size = new Size(1043, 130);
             panelFooter.TabIndex = 1;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Anchor = AnchorStyles.None;
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(458, 33);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(24, 24);
-            pictureBox7.TabIndex = 11;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Anchor = AnchorStyles.None;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(262, 33);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(24, 24);
-            pictureBox6.TabIndex = 10;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Anchor = AnchorStyles.None;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(349, 33);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(24, 24);
-            pictureBox5.TabIndex = 9;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Anchor = AnchorStyles.None;
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(400, 29);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(32, 32);
-            pictureBox4.TabIndex = 8;
-            pictureBox4.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.LightGray;
-            label3.Location = new Point(12, 84);
-            label3.Name = "label3";
-            label3.Size = new Size(49, 20);
-            label3.TabIndex = 7;
-            label3.Text = "00:00";
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.ForeColor = Color.LightGray;
-            label2.Location = new Point(987, 84);
-            label2.Name = "label2";
-            label2.Size = new Size(49, 20);
-            label2.TabIndex = 6;
-            label2.Text = "00:00";
-            // 
-            // panel3
-            // 
-            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            panel3.BackColor = Color.FromArgb(36, 33, 50);
-            panel3.Location = new Point(58, 91);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(923, 5);
-            panel3.TabIndex = 5;
-            // 
-            // label1
-            // 
-            label1.Anchor = AnchorStyles.None;
-            label1.AutoSize = true;
-            label1.ForeColor = Color.LightGray;
-            label1.Location = new Point(774, 36);
-            label1.Name = "label1";
-            label1.Size = new Size(32, 20);
-            label1.TabIndex = 4;
-            label1.Text = "0%";
-            // 
-            // panel2
-            // 
-            panel2.Anchor = AnchorStyles.None;
-            panel2.BackColor = Color.FromArgb(36, 33, 50);
-            panel2.Location = new Point(568, 42);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(200, 5);
-            panel2.TabIndex = 3;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Anchor = AnchorStyles.None;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(538, 33);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(24, 24);
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Anchor = AnchorStyles.None;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(499, 33);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(24, 24);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.None;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(307, 33);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(24, 24);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            panelFooter.Paint += panelFooter_Paint;
             // 
             // picLogo
             // 
@@ -366,17 +204,6 @@
             picLogo.SizeMode = PictureBoxSizeMode.Zoom;
             picLogo.TabIndex = 0;
             picLogo.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Dock = DockStyle.Top;
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(0, 0);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(250, 129);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 0;
-            pictureBox8.TabStop = false;
             // 
             // Frm_Principal
             // 
@@ -394,18 +221,9 @@
             panel1.ResumeLayout(false);
             panelMenu.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
-            panelChildForm.ResumeLayout(false);
-            panelFooter.ResumeLayout(false);
-            panelFooter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panelChildForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             ResumeLayout(false);
         }
 
@@ -413,7 +231,6 @@
 
         private Panel panelSideMenu;
         private Panel panel1;
-        private Button btnInfo;
         private Panel panelMenu;
         private Button btnGaleriaImagenes;
         private Button btnGaleria;
@@ -423,18 +240,6 @@
         private PictureBox picLogo;
         private Panel panelFooter;
         private Button btnExit;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
-        private Label label2;
-        private Panel panel3;
-        private Label label1;
-        private Panel panel2;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
-        private Label label3;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox6;
         private PictureBox pictureBox8;
     }
 }

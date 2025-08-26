@@ -38,7 +38,7 @@ namespace GaleriaDeImagenes.ServiciosExternos_FrmGaleria
         public void RetrocederPagina() { if (PaginaActual > 1) PaginaActual--; }
 
         // TODO: Método principal para obtener imágenes de la API
-        // TODO: Ahora acepta un CancellationToken para permitir cancelación desde el formulario
+        // TODO: CancellationToken para permitir cancelación desde el formulario
         public async Task<List<Image>> ObtenerImagenesAsync(CancellationToken token = default)
         {
             // TODO: Validar que se haya hecho una búsqueda antes

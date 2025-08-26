@@ -8,16 +8,16 @@ namespace GaleriaDeImagenes.Forms
         // TODO: Fuente de cancelación para búsquedas asíncronas
         private CancellationTokenSource cts;
 
-        // TODO: Bandera que indica si hay una búsqueda en curso
+        // TODO: indica si hay una búsqueda en curso
         private bool busquedaEnCurso = false;
 
-        // TODO: Instancia de la API de Pexels (servicio externo para obtener imágenes)
+        // TODO: Instancia de la API de Pexels servicio externo para obtener imágenes
         private readonly Pexels_Api api = new Pexels_Api();
 
         // TODO: Clase auxiliar encargada de gestionar búsquedas y paginación
         private readonly BusquedaImagenes buscador;
 
-        // TODO: Guarda el último término de búsqueda (para navegar entre páginas)
+        // TODO: Guarda el último término de búsqueda para navegar entre páginas
         private string ultimoQuery = "";
 
         // TODO: Arreglo de PictureBox donde se mostrarán las imágenes
@@ -164,7 +164,7 @@ namespace GaleriaDeImagenes.Forms
                     // TODO: Mostrar imágenes descargadas en los PictureBox
                     MostrarImagenes.CargarImagenes(imagenes, pictureBoxes);
 
-                    // TODO: Lanzar evento → notificar a suscriptores que se descargaron imágenes
+                    // TODO: Lanzar evento  notificar a suscriptores que se descargaron imágenes
                     ImagenesDescargadas?.Invoke(this, imagenes);
                 }
                 else

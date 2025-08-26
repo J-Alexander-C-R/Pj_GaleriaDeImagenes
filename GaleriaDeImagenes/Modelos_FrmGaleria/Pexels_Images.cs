@@ -12,8 +12,6 @@ namespace GaleriaDeImagenes.Modelos_FrmGaleria
         [JsonProperty("src")]
         public Pexels_Src Src { get; set; }
 
-        // TODO: Texto alternativo de la imagen (opcional)
-        [JsonProperty("alt")]
-        public string Alt { get; set; }
+        
     }
 }

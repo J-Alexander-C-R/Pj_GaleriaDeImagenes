@@ -18,8 +18,8 @@ namespace GaleriaDeImagenes.Servicios_FrmGaleria
             _client.DefaultRequestHeaders.Add("Authorization", _apiKey);
         }
 
-        //
-        public async Task<Pexels_Respuesta> GetImagesAsync(string query, int cantidad, int page = 1, CancellationToken token = default)
+        
+        public async Task<Pexels_Respuesta> GetImagesAsync(string query, int cantidad, int page, CancellationToken token = default)
         {
             // TODO: Construimos la URL con el texto de búsqueda, cantidad y página
             string url = $"https://api.pexels.com/v1/search?query={Uri.EscapeDataString(query)}&per_page={cantidad}&page={page}";
